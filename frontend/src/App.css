@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.9);
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(255,255,255,0.6);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.container > div {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:first-child {
+    background: #4CAF50;
+    color: white;
+}
+
+button:first-child:hover {
+    background: #43a047;
+    transform: translateY(-2px);
+}
+
+button:last-child {
+    background: #2196F3;
+    color: white;
+}
+
+button:last-child:hover {
+    background: #1976d2;
+    transform: translateY(-2px);
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card button {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.card button:first-child {
+    background: #ff9800;
+}
+
+.card button:first-child:hover {
+    background: #f57c00;
+}
+
+.card button:last-child {
+    background: #e53935;
+}
+
+.card button:last-child:hover {
+    background: #c62828;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container > div {
+        flex-direction: column;
+    }
+
+    .card button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+}
